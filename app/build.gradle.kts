@@ -63,6 +63,7 @@ dependencies {
 
     // ✅ Firebase BoM (Bill of Materials)
     implementation(platform("com.google.firebase:firebase-bom:33.3.0"))
+    implementation(libs.core)
 
 // ✅ Firebase services you use
     implementation("com.google.firebase:firebase-analytics-ktx")

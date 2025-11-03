@@ -31,8 +31,10 @@ class MainActivity : AppCompatActivity() {
                 tileList.clear()
                 for (doc in documents) {
                     val title = doc.getString("title") ?: ""
-                    val imageUrl = doc.getString("Imageurl") ?: "" // ✅ Case matches Firestore
-                    tileList.add(Tile(title, imageUrl))
+                    val imageUrl = doc.getString("ImageUrl") ?: ""
+                    val webUrl = doc.getString("WebUrl") ?: ""
+
+                    tileList.add(Tile(title, imageUrl,webUrl))
                 }
                 adapter.notifyDataSetChanged()
             }

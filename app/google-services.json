@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "731012170185",
+    "project_id": "content-sharing-13c73",
+    "storage_bucket": "content-sharing-13c73.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731012170185:android:e4f6231968a057a77f2818",
+        "android_client_info": {
+          "package_name": "com.example.contentsharingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCInrV4NKf82zZRA87ago4FDpJoy9aQjI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

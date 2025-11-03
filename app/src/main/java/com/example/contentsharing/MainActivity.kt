@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadTilesFromFirebase() {
-        db.collection("contentTiles") // ✅ Correct collection name
+        db.collection("contentTiles")
             .get()
             .addOnSuccessListener { documents ->
                 tileList.clear()

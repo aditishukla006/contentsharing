@@ -40,7 +40,6 @@ android {
     }
 
     buildFeatures {
-        // ✅ Use viewBinding if you’re inflating XML layouts
         viewBinding = true
 
         compose = true
@@ -52,24 +51,20 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
 
-    // ✅ UI dependencies (for non-compose)
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.github.bumptech.glide:glide:4.15.1")
 
-    // ✅ Firebase BoM (Bill of Materials)
     implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
 
-    // ✅ Firebase BoM (Bill of Materials)
     implementation(platform("com.google.firebase:firebase-bom:33.3.0"))
     implementation(libs.core)
 
-// ✅ Firebase services you use
     implementation("com.google.firebase:firebase-analytics-ktx")
     implementation("com.google.firebase:firebase-firestore-ktx")
     implementation("com.google.firebase:firebase-auth-ktx")
-    implementation(libs.material3.android) // add this if you plan user login
+    implementation(libs.material3.android)
 
 
     // Testing

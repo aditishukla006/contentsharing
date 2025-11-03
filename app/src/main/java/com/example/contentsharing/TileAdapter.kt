@@ -33,7 +33,7 @@ class TileAdapter(private val tileList: List<Tile>) :
         holder.tileText.text = tile.title
 
         if (tile.webUrl.contains("youtube.com") || tile.webUrl.contains("youtu.be")) {
-            // ✅ Show YouTube player, hide image
+
             holder.tileImage.visibility = View.GONE
             holder.youtubePlayerView.visibility = View.VISIBLE
 
@@ -46,7 +46,7 @@ class TileAdapter(private val tileList: List<Tile>) :
             })
 
         } else {
-            // ✅ Normal image tile
+
             holder.youtubePlayerView.visibility = View.GONE
             holder.tileImage.visibility = View.VISIBLE
 
